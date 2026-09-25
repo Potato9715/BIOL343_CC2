@@ -1,6 +1,6 @@
 ---
 title: "BIOL343 Coding Challenge 2"
-author: "Group #"
+author: "Group 5"
 date: "`r format(Sys.Date(), '%d %B %Y')`"
 output: 
     html_document:
@@ -55,7 +55,15 @@ knitr::opts_chunk$set(echo = TRUE)
 
 Write a **Markdown table** (Chapter 5, *Tables*) with three columns — variable, description, units — and one row for each of these variables from the Coding Challenge 1 dataset: `population_type`, `ovary_width`, `ovary_height`, `flower_number`. Use the *pipes and dashes* format from the chapter, not R code.
 
-(table here)
+
+Tables
+---------------------------------------------------------------------------------------------------
+Variable | Description | Units
+---------|--------------------------------|--------------------------------------------------------
+population_type | Indicates whether the population is asexual or sexual | No Units |
+ovary_width | A measure of the width of the ovaries which is a reliable measure of overall flower size | mm |
+ovary_height | A measure of the height of the ovaries which is a reliable measure of overall flower size | mm |
+flower_number | The average number of flowers produced by each individual in a sample of plants from each population | Count |
 
 # Import and clean the data
 
@@ -117,7 +125,7 @@ Make a histogram of `ovary_area` with `ggplot()` + `geom_histogram()` (Chapter 4
 
 ```{r area-histogram, echo = F}
 library(ggplot2)
-visualization = ggplot(aes(x = ovary_area, fill = population_type),data=cc1_data) + geom_histogram(binwidth = 1) + theme_classic() + xlab('Ovary Area (mm2)') + ylab('Count') + labs(title = 'Ovary Area by Population Type in Solanum pimpinellifolium', fill = NULL) + scale_fill_discrete(labels = c('Asexual','Sexual'))
+visualization = ggplot(aes(x = ovary_area, fill = population_type),data=cc1_data) + geom_histogram(binwidth = 1) + theme_classic() + xlab('Ovary Area (mm^2)') + ylab('Count') + labs(title = 'Ovary Area by Population Type in Solanum pimpinellifolium', fill = NULL) + scale_fill_discrete(labels = c('Asexual','Sexual'))
 visualization + facet_wrap(.~population_type)
 ```
 
