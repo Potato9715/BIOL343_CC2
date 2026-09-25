@@ -39,7 +39,7 @@ Write the group members as an **ordered list** (Chapter 5, *Lists*). For each me
     + [BIOL343_CC2](https://github.com/jake-mayo/BIOL343.CC)
 1. **Noah Lu** - 20483156
     + [BIOL343_CC2](https://github.com/NLRcode/BIOL343_CC)
-1. **Iryna Ozimek** - 20508541
+1. **Iryna Ozimek** - 20508451
     + [BIOL343_CC2](https://github.com/irynaoz323/BIOL343.CC)
 
 # Setup chunk
